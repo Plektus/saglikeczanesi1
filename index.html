@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sağlık Eczanesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon-theme.svg">
+    <link rel="alternate icon" type="image/png" href="favicon-theme.png">
+    <link rel="apple-touch-icon" href="favicon-theme.png">
+</head>
+<body>
+    <header>
+        <div class="logo" style="color: #fff; font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 8px; margin-right: 32px;">
+            <span style="font-size: 2rem;">💊</span> Sağlık Eczanesi
+        </div>
+        <nav id="main-navbar" style="display: flex; align-items: center; gap: 32px; margin-left: auto;">
+            <a href="#main" class="nav-link" data-section="main" style="color: #fff; font-size: 1.1rem; font-weight: 500;">Ana Sayfa</a>
+            <a href="#hizmetler" class="nav-link" data-section="hizmetler" style="color: #fff; font-size: 1.1rem; font-weight: 500;">Hizmetler</a>
+            <a href="#urunler" class="nav-link" data-section="urunler" style="color: #fff; font-size: 1.1rem; font-weight: 500;">Ürünler</a>
+            <a href="#info" class="nav-link" data-section="info" style="color: #fff; font-size: 1.1rem; font-weight: 500;">Hakkımızda & İletişim</a>
+            <button id="login-btn" class="user-btn user-icon-btn" style="background: #e0f7fa; color: #00796b; font-weight: 600; font-size: 1rem; padding: 7px 18px; border-radius: 8px; display: flex; align-items: center; gap: 7px; margin-left: 32px;">
+                <span class="user-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="#00796b" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="7.5" r="4.5"/><ellipse cx="11" cy="16.5" rx="7.5" ry="4.5" opacity="0.7"/></svg></span>
+                <span class="user-btn-text">Giriş Yap</span>
+            </button>
+            <div id="profile-menu-wrapper" style="display:none; position:relative; display:inline-block;">
+                <button id="profile-btn" class="user-btn user-icon-btn profile-btn" aria-haspopup="true" aria-expanded="false">
+                    <span class="user-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="#388e3c" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="7.5" r="4.5"/><ellipse cx="11" cy="16.5" rx="7.5" ry="4.5" opacity="0.7"/></svg></span>
+                </button>
+                <div id="profile-menu" class="profile-menu" style="display:none;">
+                    <div class="profile-menu-arrow"></div>
+                    <ul>
+                        <li><a href="#" id="profile-favorites">Favorilerim</a></li>
+                        <li><a href="#" id="profile-cart">Sepetim</a></li>
+                        <li><button id="profile-logout" class="profile-logout-btn">Çıkış Yap</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="main" class="page-section">
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <h1>Sağlık Eczanesi'ne Hoşgeldiniz</h1>
+                    <p>Sağlığınız için güvenilir adresiniz. Uzman ekibimizle hızlı ve kaliteli hizmet sunuyoruz.</p>
+                    <a href="#urunler" class="hero-btn">İndirimli Ürünleri Gör</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Modern Eczane Karşılama" class="hero-img">
+            </div>
+            <div class="one-cikanlar-firsatlar">
+                <div class="one-cikanlar">
+                    <h2><span>💊</span> İndirimde & Öne Çıkanlar</h2>
+                    <ul>
+                        <li><strong>Paracet Forte 500mg</strong> – %30 indirimli!</li>
+                        <li><strong>Vitamin C Plus</strong> – 2. ürüne %50 indirim</li>
+                        <li><strong>Gripin Cold</strong> – 99 TL yerine 69 TL</li>
+                        <li><strong>Madecassol Krem</strong> – %20 indirim</li>
+                    </ul>
+                </div>
+                <div class="son-dakika-firsatlar">
+                    <h2><span>⚡</span> Son Dakika Fırsatları</h2>
+                    <ul>
+                        <li><strong>Ücretsiz Kan Basıncı Ölçümü</strong> – Sadece bu hafta!</li>
+                        <li><strong>Danışmanlıkta İlk Görüşme</strong> – Ücretsiz</li>
+                        <li><strong>Çocuklar için Vitamin Şurubu</strong> – Sınırlı stok!</li>
+                        <li><strong>Online Reçete Hizmeti</strong> – Hemen başvurun!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-about-quick">
+                <div class="main-about">
+                    <h2>Hakkımızda</h2>
+                    <p>Sağlık Eczanesi, müşteri memnuniyetini ve güvenliğini ön planda tutan, yenilikçi ve modern bir eczanedir. Geniş ürün yelpazemiz ve uzman kadromuzla her zaman yanınızdayız.</p>
+                </div>
+                <div class="main-quick-contact">
+                    <h2>Hızlı İletişim</h2>
+                    <ul>
+                        <li><strong>Adres:</strong> Örnek Mah. Eczane Sk. No:1, İstanbul</li>
+                        <li><strong>Telefon:</strong> 0212 123 45 67</li>
+                        <li><strong>Çalışma Saatleri:</strong> 08:00 - 20:00</li>
+                    </ul>
+                    <a href="#info" class="main-contact-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </section>
+        <section id="hizmetler" class="page-section" style="display:none;">
+            <div class="hizmetler-banner">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Modern Eczane İç Görünüm" class="hizmetler-img">
+                <div class="hizmetler-banner-content">
+                    <h2>Hizmetlerimiz</h2>
+                    <p>Sağlık Eczanesi olarak, sadece ilaç temini değil; danışmanlık, ölçüm ve sağlık takibi gibi birçok profesyonel hizmet sunuyoruz. Sağlığınız için en iyisini hedefliyoruz.</p>
+                </div>
+            </div>
+            <div class="hizmetler-listesi">
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">💊</span>
+                    <h3>Reçete İlaç Temini</h3>
+                    <p>Doktorunuzun reçete ettiği tüm ilaçları hızlı ve güvenli şekilde temin edebilirsiniz.</p>
+                </div>
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">🩺</span>
+                    <h3>Sağlık Danışmanlığı</h3>
+                    <p>Uzman eczacılarımızdan ilaç kullanımı ve sağlık konularında ücretsiz danışmanlık alın.</p>
+                </div>
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">💪</span>
+                    <h3>Vitamin & Takviye Ürünler</h3>
+                    <p>Bağışıklık ve genel sağlık için kaliteli vitamin ve takviye ürünlerimizden faydalanın.</p>
+                </div>
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">🩸</span>
+                    <h3>Ücretsiz Kan Basıncı Ölçümü</h3>
+                    <p>Hafta boyunca ücretsiz tansiyon ölçümü hizmetimizden yararlanabilirsiniz.</p>
+                </div>
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">📦</span>
+                    <h3>Evde Teslimat</h3>
+                    <p>İhtiyaç halinde ilaçlarınızı ve sağlık ürünlerinizi adresinize teslim ediyoruz.</p>
+                </div>
+                <div class="hizmet-kart">
+                    <span class="hizmet-ikon">🌐</span>
+                    <h3>Online Reçete Hizmeti</h3>
+                    <p>Online reçete gönderimi ile zamandan tasarruf edin, eczanede beklemeyin.</p>
+                </div>
+            </div>
+        </section>
+        <section id="urunler" class="page-section" style="display:none;">
+            <div class="urunler-banner">
+                <div class="urunler-banner-content">
+                    <h2>Ürünlerimiz</h2>
+                    <p>Sağlık Eczanesi olarak, reçeteli ve reçetesiz ilaçlardan vitamin ve takviyelere, dermokozmetik ürünlerden medikal malzemelere kadar geniş bir ürün yelpazesi sunuyoruz. Aşağıda öne çıkan ve indirimde olan ürünlerimizi inceleyebilirsiniz.</p>
+                    <div class="urunler-quick-actions">
+                        <a href="#" class="urunler-action-btn">Tümünü Listele</a>
+                        <a href="#" class="urunler-action-btn">Sadece İndirimdekiler</a>
+                        <a href="#" class="urunler-action-btn" id="urunler-favorilerim-btn">Favorilerim</a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80" alt="Eczane Ürünleri" class="urunler-img">
+            </div>
+            <div class="urunler-list-wrapper">
+                <div id="urunler-listesi" class="urunler-grid"></div>
+            </div>
+        </section>
+        <section id="info" class="page-section" style="display:none;">
+            <div class="info-banner">
+                <div class="info-banner-content">
+                    <h2>Hakkımızda</h2>
+                    <p>Sağlık Eczanesi olarak, müşteri memnuniyetini ve güvenliğini ön planda tutan, yenilikçi ve modern bir eczaneyiz. Geniş ürün yelpazemiz, uzman kadromuz ve teknolojik altyapımız ile her zaman yanınızdayız. Misyonumuz; sağlığınızı korumak, doğru bilgi ve kaliteli hizmet sunmaktır.</p>
+                    <ul class="info-vizyon-list">
+                        <li><span>✔️</span> Güvenilir ve hızlı hizmet</li>
+                        <li><span>✔️</span> Uzman eczacı danışmanlığı</li>
+                        <li><span>✔️</span> Geniş ürün ve marka çeşitliliği</li>
+                        <li><span>✔️</span> Modern ve hijyenik ortam</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=500&q=80" alt="Eczane Hakkımızda" class="info-img">
+            </div>
+            <div class="info-contact-wrapper">
+                <div class="info-contact-block">
+                    <h2>İletişim</h2>
+                    <div class="contact-info">
+                        <p><strong>Adres:</strong> Örnek Mah. Eczane Sk. No:1, İstanbul</p>
+                        <p><strong>Telefon:</strong> 0212 123 45 67</p>
+                        <p><strong>Çalışma Saatleri:</strong> Hafta içi 08:00 - 20:00, Cumartesi 09:00 - 18:00</p>
+                    </div>
+                    <h3>Bize Mesaj Gönderin</h3>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Adınız" required>
+                        <input type="email" id="email" placeholder="E-posta" required>
+                        <textarea id="message" placeholder="Mesajınız" required></textarea>
+                        <button type="submit">Gönder</button>
+                    </form>
+                    <div id="formMessage"></div>
+                </div>
+                <div class="info-map-block">
+                    <h2>Konumumuz</h2>
+                    <iframe src="https://www.google.com/maps?q=istanbul+eczane&output=embed" width="100%" height="250" style="border:0;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sağlık Eczanesi. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Favorilerim butonuna tıklanınca profil menüsünü aç ve Favorilerim sekmesini tetikle
+    const urunlerFavorilerimBtn = document.getElementById('urunler-favorilerim-btn');
+    const profileBtn = document.getElementById('profile-btn');
+    const profileMenu = document.getElementById('profile-menu');
+    const profileFavorites = document.getElementById('profile-favorites');
+    if (urunlerFavorilerimBtn && profileBtn && profileMenu && profileFavorites) {
+        urunlerFavorilerimBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Profil menüsünü aç
+            if (profileMenu.style.display === 'none' || profileMenu.style.display === '') {
+                profileBtn.click();
+            }
+            // Favorilerim sekmesini tetikle
+            setTimeout(() => {
+                profileFavorites.click();
+            }, 100);
+        });
+    }
+    </script>
+
+    <!-- Giriş Sayfası Modalı -->
+    <div id="login-modal" class="login-modal" style="display:none;">
+      <div class="login-modal-content">
+        <button class="login-modal-close" id="login-modal-close">&times;</button>
+        <button id="register-link" class="register-link-modal">Kayıt Ol</button>
+        <div class="login-modal-header">
+          <span class="login-modal-icon">🔒</span>
+          <h2>Giriş Yap</h2>
+          <p>Hesabınıza erişmek için bilgilerinizi girin.</p>
+        </div>
+        <form id="loginForm" class="login-form">
+          <label for="login-username">Kullanıcı Adı</label>
+          <input type="text" id="login-username" name="username" placeholder="Kullanıcı adınızı girin" required autocomplete="username">
+          <label for="login-password">Şifre</label>
+          <input type="password" id="login-password" name="password" placeholder="Şifrenizi girin" required autocomplete="current-password">
+          <button type="submit" class="login-submit-btn">Giriş Yap</button>
+          <div id="login-error" class="login-error"></div>
+          <div class="login-modal-extra">
+            <span>Hesabınız yok mu?</span>
+            <a href="#" id="guest-login-link" class="guest-login-link">Misafir olarak devam et</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- İndirimli Ürünler Modalı -->
+<div id="indirimliUrunlerModal" style="display:none; position:fixed; z-index:2000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.25); align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:18px; box-shadow:0 8px 32px rgba(0,121,107,0.18); padding:38px 36px 32px 36px; min-width:320px; max-width:95vw; width:100%; max-width:420px; display:flex; flex-direction:column; align-items:center; position:relative;">
+    <button id="indirimliUrunlerModalClose" style="position:absolute; top:12px; right:18px; font-size:2rem; color:#00796b; background:none; border:none; cursor:pointer; font-weight:bold; border-radius:50%; width:38px; height:38px; display:flex; align-items:center; justify-content:center; transition:background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.13s;">&times;</button>
+    <h2 style="color:#00796b; margin-bottom:18px;">İndirimli Ürünler</h2>
+    <ul id="indirimliUrunlerList" style="list-style:none; padding:0; margin:0; width:100%;"></ul>
+  </div>
+</div>
+<script>
+const tumUrunler = [
+  {isim:'Paracet Forte 500mg', fiyat:'69 TL', aciklama:'Ağrı kesici ve ateş düşürücü.'},
+  {isim:'Vitamin C Plus', fiyat:'49 TL', aciklama:'Bağışıklık güçlendirici C vitamini.'},
+  {isim:'Gripin Cold', fiyat:'69 TL', aciklama:'Soğuk algınlığı ve grip için.'},
+  {isim:'Madecassol Krem', fiyat:'89 TL', aciklama:'Cilt yenileyici krem.'},
+  {isim:'Omega 3 Balık Yağı', fiyat:'119 TL', aciklama:'Kalp ve beyin sağlığı için.'},
+  {isim:'Bepanthol Cilt Bakım Kremi', fiyat:'79 TL', aciklama:'Yoğun nemlendirici.'},
+  {isim:'Theraflu Forte', fiyat:'59 TL', aciklama:'Grip ve soğuk algınlığı için.'},
+  {isim:'Magnezyum Plus', fiyat:'39 TL', aciklama:'Kas ve sinir sistemi desteği.'},
+  {isim:'D Vitamini Sprey', fiyat:'44 TL', aciklama:'Bağışıklık ve kemik sağlığı.'},
+  {isim:'Zinco Plus', fiyat:'54 TL', aciklama:'Çinko takviyesi.'}
+];
+const indirimliBtn = document.querySelector('.hero-btn');
+const modal = document.getElementById('indirimliUrunlerModal');
+const modalClose = document.getElementById('indirimliUrunlerModalClose');
+const urunlerList = document.getElementById('indirimliUrunlerList');
+function rastgeleUrunler(arr, n) {
+  const shuffled = arr.slice().sort(()=>0.5-Math.random());
+  return shuffled.slice(0, n);
+}
+if(indirimliBtn && modal && modalClose && urunlerList) {
+  indirimliBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const secili = rastgeleUrunler(tumUrunler, 5);
+    urunlerList.innerHTML = secili.map(u=>`<li style='margin-bottom:14px; padding:12px 0; border-bottom:1px solid #e0f7fa;'><strong style='color:#00796b;'>${u.isim}</strong> <span style='color:#388e3c; font-weight:500;'>${u.fiyat}</span><br><span style='color:#444; font-size:0.98rem;'>${u.aciklama}</span></li>`).join('');
+    modal.style.display = 'flex';
+  });
+  modalClose.addEventListener('click', ()=>{modal.style.display='none';});
+  modal.addEventListener('click', function(e){if(e.target===modal) modal.style.display='none';});
+}
+</script>
+</body>
+</html>
